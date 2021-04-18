@@ -7,5 +7,4 @@ public class InsurancePremiumDiscountCalculator {
 		}
 		return 0;
 	}
-
 }
