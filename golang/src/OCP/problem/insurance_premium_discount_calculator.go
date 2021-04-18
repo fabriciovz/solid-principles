@@ -1,4 +1,4 @@
-package problem
+package problem_ocp
 
 type InsurancePremiumDiscountCalculator struct {
 }

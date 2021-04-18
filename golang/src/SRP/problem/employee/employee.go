@@ -1,4 +1,4 @@
-package employee_problem
+package problem_srp
 
 import "fmt"
 

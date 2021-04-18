@@ -1,10 +1,14 @@
-package problem
+package solution_lsp
 
 type Product struct {
 	discount float64
 }
 
-func NewProduct() *Product {
+type IProduct interface {
+	GetDiscount() float64
+}
+
+func NewProduct() IProduct {
 	return &Product{
 		discount: 20.0,
 	}

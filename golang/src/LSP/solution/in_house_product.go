@@ -1,17 +1,21 @@
-package problem
+package solution_lsp
 
 type InHouseProduct struct {
-	Product
+	*Product
 }
-func NewInHouseProduct() *InHouseProduct {
+func NewInHouseProduct() IProduct {
 	return &InHouseProduct{
-		Product{
+		&Product{
 			discount: 20.0,
 		},
 	}
 }
 
-func (i *InHouseProduct) applyExtraDiscount(){
+func (i *InHouseProduct) ApplyExtraDiscount(){
 	i.discount = i.discount * 1.5
+}
+func (p *InHouseProduct) GetDiscount() float64 {
+	p.ApplyExtraDiscount()
+	return p.discount
 }
 

@@ -1,4 +1,4 @@
-package employee_solution
+package solution_srp
 
 type TaxCalculator struct {
 }

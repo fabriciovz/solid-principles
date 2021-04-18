@@ -1,7 +1,11 @@
-package problem
+package problem_lsp
 
 type Product struct {
 	discount float64
+}
+
+type IProduct interface {
+
 }
 
 func NewProduct() *Product {

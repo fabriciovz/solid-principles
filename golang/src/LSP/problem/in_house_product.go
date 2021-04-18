@@ -1,4 +1,4 @@
-package problem
+package problem_lsp
 
 type InHouseProduct struct {
 	Product

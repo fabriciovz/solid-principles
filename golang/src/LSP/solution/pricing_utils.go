@@ -1,4 +1,6 @@
-package problem
+package solution_lsp
+
+import "fmt"
 
 type PricingUtils struct {
 }
@@ -6,19 +8,17 @@ type PricingUtils struct {
 func Run() {
 	p1 := NewProduct()
 	p2 := NewProduct()
-	//p3 := NewInHouseProduct()
+	p3 := NewInHouseProduct()
 
-	productList := make([]*Product,3)
+	productList := make([]IProduct,0)
 
 	productList = append(productList,p1)
 	productList = append(productList,p2)
-	//productList = append(productList,p3)
+	productList = append(productList,p3)
 
-	//for (Product product: productList) {
-	//
-	//	if(product instanceof InHouseProduct) {
-	//		((InHouseProduct) product).applyExtraDiscount();
-	//	}
-	//	System.out.println(product.getDiscount());
+	for _,product := range productList {
+		//fmt.Println(i)
 
+		fmt.Println(product.GetDiscount())
+	}
 }
